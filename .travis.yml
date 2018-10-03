@@ -13,8 +13,8 @@ deploy:
   env: "DockerFrontend-env"
   bucket-name: "elasticbeanstalk-us-east-2-169640583188"
   bucket-path: "docker-frontend"
-  access_key_id: $AWS-access-key
+  access_key_id: $AWS_ACCESS_KEY
   secret_access_key:
-    secure: $AWS-secret-access-key
+    secure: $AWS_SECRET_KEY
   on:
     branch: master
