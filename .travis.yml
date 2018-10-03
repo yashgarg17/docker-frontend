@@ -2,7 +2,6 @@ sudo: required
 services:
   - docker
 before_install:
-  - docker build -t yash028/frontend -f Dockerfile.dev
+  - docker build -t yash028/frontend -f Dockerfile.dev .
 script:
   - docker run -it yash028/frontend npm run test -- --coverage
-  
